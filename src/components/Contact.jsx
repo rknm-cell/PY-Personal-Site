@@ -7,6 +7,12 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import Earth from "./canvas/Earth";
+import { error } from "console";
+
+//template_u861axv
+//service_2hq6kom
+//public key
+//P1h3dPPQIh1ybVVVL
 
 const Contact = () => {
   const formRef = useRef();
@@ -18,9 +24,37 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const {name, value} = e.target;};
+
+    setForm({...form, [name]: value})
   };
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      "service_2hq6kom", 
+      "template_u861axv", 
+      {from_name: form.name,
+        to_name: "Peter",
+        from_email: form.email,
+        to_email: "peteryelton@gmail.com",
+        message: form.message,
+      }, 
+      "P1h3dPPQIh1ybVVVL")
+      .then(() => {
+        setLoading(false);
+        alert("Thank you! I will get back to you soon!");
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      }, (error) => {
+        setLoading(false);
+        alert("Sorry, something went wrong. Please try again later.");
+        console.log(error.text);
+      })
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
