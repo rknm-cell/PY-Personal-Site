@@ -39,10 +39,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Software Engineer Fullstack Developer experienced in JavaScript and
-        Python based programming languages, and a background in Art and
-        Animation. Possessing strong skills in visual art and team management
-        that help bridge the gap between design and development to an engaging
+        Peter Yelton is a Software Engineer Fullstack Developer experienced in JavaScript and
+        Python languages with a background in art and
+        animation. They possess strong skills in visual art and team management
+        that help bridge the gap between design and development to create an engaging
         product.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">

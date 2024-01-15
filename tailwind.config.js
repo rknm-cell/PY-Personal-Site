@@ -6,6 +6,16 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+      },
+      letterSpacing: {
+        '10': '10px',
+      },
+      lineHeight: {
+        '0.8': '0.8',
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",

@@ -7,7 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import Earth from "./canvas/Earth";
-import { error } from "console";
+
 
 //template_u861axv
 //service_2hq6kom
@@ -24,36 +24,47 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const {name, value} = e.target;};
+    const { target } = e;
+    const { name, value } = target;
 
-    setForm({...form, [name]: value})
+    setForm({
+      ...form,
+      [name]: value,
+    });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.send(
-      "service_2hq6kom", 
-      "template_u861axv", 
-      {from_name: form.name,
-        to_name: "Peter",
-        from_email: form.email,
-        to_email: "peteryelton@gmail.com",
-        message: form.message,
-      }, 
-      "P1h3dPPQIh1ybVVVL")
-      .then(() => {
-        setLoading(false);
-        alert("Thank you! I will get back to you soon!");
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
-      }, (error) => {
-        setLoading(false);
-        alert("Sorry, something went wrong. Please try again later.");
-        console.log(error.text);
-      })
+
+    emailjs
+      .send(
+        "service_2hq6kom",
+        "template_u861axv",
+        {
+          from_name: form.name,
+          to_name: "Peter",
+          from_email: form.email,
+          to_email: "peteryelton@gmail.com",
+          message: form.message,
+        },
+        "P1h3dPPQIh1ybVVVL"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you! I will get back to you soon!");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          alert("Sorry, something went wrong. Please try again later.");
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -105,15 +116,22 @@ const Contact = () => {
               required
             />
           </label>
-          <button type="submit " className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"> {loading ? 'Sending...' : 'Send'}</button>
+          <button
+            type="submit "
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+          >
+            {" "}
+            {loading ? "Sending..." : "Send"}
+          </button>
         </form>
       </motion.div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 0.4)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[530px]">
-          <Earth />
-        </motion.div>
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[530px]"
+      >
+        <Earth />
+      </motion.div>
     </div>
   );
 };
