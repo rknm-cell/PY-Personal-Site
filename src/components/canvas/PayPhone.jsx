@@ -8,31 +8,32 @@ import {
   MeshToonMaterial,
   NearestFilter,
   Vector3,
+  TextureLoader,
 } from "three";
-import { TextureLoader } from "three";
+import { TGALoader } from "three/addons/loaders/TGALoader.js";
 
 const PayPhone = ({ isMobile }) => {
   const payphone = useGLTF("./payphone_obj/payphone.gltf");
-  const [colorMap, displacementMap, normalMap, ] = useLoader(TextureLoader, [
-    './payphone_obj/payphone_diffuse.png',
-    './payphone_obj/payphone_ao.tga',
-    './payphone_obj/payphone_normal.tga',
-
-  ])
-  // const texture = useLoader(TextureLoader, payphone_gloss);
   
-    
+  const [colorMap, aoMap, metalnessMap, normalMap, specularMap] = useLoader(TGALoader, [
+    "./payphone_obj/payphone_diffuse.tga",
+    "./payphone_obj/payphone_ao.tga",
+    "./payphone_obj/payphone_metalness.tga",
+    "./payphone_obj/payphone_normal.tga",
+    "./payphone_obj/payphone_specular.tga",
+  ]);
+
   return (
     <mesh>
       <hemisphereLight
-        intensity={0.75}
+        intensity={1.75}
         groundColor="black"
         position={[0, 10, 10]}
       />
-      <pointLight intensity={5} position={[0, 0, 0]} />
+      <pointLight intensity={2} position={[1, 1, 1]} />
       <spotLight
-        position={[20, 3, 5]}
-        angle={0.12}
+        position={[0, 0, 0]}
+        angle={0}
         penumbra={0}
         intensity={5}
         castShadow
@@ -41,11 +42,16 @@ const PayPhone = ({ isMobile }) => {
       />
       <primitive
         object={payphone.scene}
-        scale={isMobile ? 0.7 : 0.8}
-        position={isMobile ? [0, 0, -2] : [0, -2.7, -1]}
+        scale={isMobile ? 0.65 : 0.8}
+        position={isMobile ? [0, -2.7, 0] : [0, -2.7, -1]}
         rotation={[0, 0.3, 0]}
       />
-      <meshStandardMaterial attach="material" map={colorMap} normalMap={normalMap} />
+      <meshStandardMaterial
+        attach="material"
+        map={colorMap}
+        // displacementMap={displacementMap}
+        normalMap={normalMap}
+      />
     </mesh>
   );
 };
