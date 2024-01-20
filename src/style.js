@@ -13,7 +13,7 @@ const styles = {
     sectionSubText:
       "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
     heroBlurText:
-    "font-roboto absolute text-center text-[clamp(24px, 20vw, 200px)] text-[10vw] uppercase font-extrabold tracking-10 leading-0.8",  
+    "  font-roboto absolute text-center sm:text-[40px] md:text-[50px] lg:text-[200px] uppercase font-extrabold tracking-10 leading-2",  
   };
   
   export { styles };

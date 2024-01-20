@@ -6,19 +6,23 @@ import { MetalGearCanvas } from "./canvas";
 import './Hero.css';
 
 const Hero = () => {
+  const isMobile = window.innerWidth < 768;
+  console.log(window.innerWidth)
+  console.log(isMobile)
+  
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120]px flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff] " />
+          <div className="w-5 h-5 rounded-full bg-[#63a774] " />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
-        <div id="headline-container" className="top-[100px]">
-          <div id="text-behind" className={styles.heroBlurText}>PETER YELTON</div>
-          <div id="text-behind-blur" className={styles.heroBlurText}>PETER YELTON</div>
-          <div id="text-front" className={styles.heroBlurText}>PETER YELTON</div>
+        <div id="headline-container" className="top-[100px] line-height-[3]">
+          <div id="text-behind" className={styles.heroBlurText}>PETER {isMobile ? <br/> : ""}YELTON</div>
+          <div id="text-behind-blur" className={styles.heroBlurText}>PETER {isMobile ? <br/> : ""}YELTON</div>
+          <div id="text-front" className={styles.heroBlurText}>PETER {isMobile ? <br/> : ""}YELTON</div>
         </div>
         {/* <div>
           <h1 className={`${styles.heroHeadText}`}>

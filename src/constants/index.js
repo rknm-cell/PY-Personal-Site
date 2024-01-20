@@ -117,57 +117,43 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Scenic Artist / Casting Artist",
+      company_name: "SFDS",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "May 2021 - Now",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Interfaced with Project Managers to execute designs for sculptural and scenic elements of projects.",
+        "Collaborated with a team of artists to ensure speedy and accurate delivery of design elements",
+        "Researched and implemented new techniques and tools to create more efficient processes of scenic design.",
+        "Trained new team members in shop practices and standards.",
+        "Maintained and tracked inventory."
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "VFX Artist",
+      company_name: "Self",
       icon: tesla,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Coordinated with producers and directors to execute planned elements of layout, animation, and compositing.",
+        "Collaborated with Editing and Color Correction to create a smooth, efficient pipeline.",
+        "Implemented design elements and animation for a variety of projects.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Crew Chief",
+      company_name: "Breakaway Courier Systems",
       icon: shopify,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Trained new and tenured employees in new technology and methodolies.",
+        "Developed new delivery technology and systems to increase efficiency of deliveries by 100% and lower maintenance costs.",
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
   ];
   
   const testimonials = [
@@ -199,30 +185,34 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Melody Talker",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Mobile application that allows users with vocal disabilities to communicate with others using a text-to-speech interface.",
       tags: [
         {
-          name: "react",
+          name: "react-native",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "python",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "expo",
           color: "pink-text-gradient",
         },
+        {
+          name:"restapi",
+          color: "yellow-text-gradient"
+        }
       ],
       image: carrent,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Wine Time",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "E-Commerce site selling natural wines.",
       tags: [
         {
           name: "react",
@@ -233,7 +223,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "python",
           color: "pink-text-gradient",
         },
       ],
@@ -241,7 +231,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "PokeAPI Team Builder",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [

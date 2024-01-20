@@ -13,10 +13,10 @@ const App = () => {
     </div>
     <div style={{ marginTop: '50px' }}>
       <About />
-      <Experience />
       <Tech />
       <Works />
-      <Feedbacks />
+      <Experience />
+      {/* <Feedbacks /> */}
     </div>
     <div className='relative z-0'>
       <Contact />

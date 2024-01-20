@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import Earth from "./canvas/Earth";
+import PayPhoneCanvas from "./canvas/PayPhone";
 
 
 //template_u861axv
@@ -130,7 +131,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 0.4)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[530px]"
       >
-        <Earth />
+        <PayPhoneCanvas/>
       </motion.div>
     </div>
   );
