@@ -1,0 +1,21 @@
+#card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 2.5rem;
+    overflow: hidden;
+}
+
+@media (min-width: 1280px) {
+    #card {
+        margin-top: 3rem;
+        flex-direction: row;
+    }
+}

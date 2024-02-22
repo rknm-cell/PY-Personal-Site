@@ -9,7 +9,10 @@ const App = () => {
   <div className='relative z-0 bg-primary '>
     <div id="app-navbar-div" className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
       <Navbar />
+      <div className="gradient">
+
       <Hero />
+      </div>
     </div>
     <div style={{ marginTop: '50px' }}>
       <About />

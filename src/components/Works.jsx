@@ -6,6 +6,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants/index";
 import { fadeIn, textVariant } from "../utils/motion";
+import "./Glass.css"
 
 const ProjectCard = ({
   index,
@@ -25,7 +26,7 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230p]">
+        <div id="card"className="relative w-full h-[230p]">
           <img
             src={image}
             alt={name}

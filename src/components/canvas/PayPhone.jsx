@@ -23,6 +23,8 @@ const PayPhone = ({ isMobile }) => {
     "./payphone_obj/payphone_specular.tga",
   ]);
 
+  
+
   return (
     <mesh>
       <hemisphereLight
@@ -42,7 +44,7 @@ const PayPhone = ({ isMobile }) => {
       />
       <primitive
         object={payphone.scene}
-        scale={isMobile ? 0.65 : 0.8}
+        scale={isMobile ? 0.5 : 0.8}
         position={isMobile ? [0, -2.7, 0] : [0, -2.7, -1]}
         rotation={[0, 0.3, 0]}
       />

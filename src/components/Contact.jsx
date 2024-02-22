@@ -8,12 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import Earth from "./canvas/Earth";
 import PayPhoneCanvas from "./canvas/PayPhone";
+import "./Glass.css";
 
 
-//template_u861axv
-//service_2hq6kom
-//public key
-//P1h3dPPQIh1ybVVVL
+
 
 const Contact = () => {
   const formRef = useRef();
