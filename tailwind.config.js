@@ -17,9 +17,9 @@ module.exports = {
         '0.8': '0.8',
       },
       colors: {
-        primary: "#040D12",
-        secondary: "#183D3D",
-        tertiary: "#5C8374",
+        primary: "#061c0f",
+        secondary: "#586b62",
+        tertiary: "#578a45",
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",

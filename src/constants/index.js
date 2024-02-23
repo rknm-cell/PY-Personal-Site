@@ -94,7 +94,7 @@ const technologies = [
   // },
   // {
   //   name: "Node JS",
-  //   icon: nodejs,
+    // icon: nodejs,
   // },
   // {
   //   name: "MongoDB",
