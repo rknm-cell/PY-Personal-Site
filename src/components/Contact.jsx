@@ -3,10 +3,8 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../style";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import Earth from "./canvas/Earth";
 import PayPhoneCanvas from "./canvas/PayPhone";
 import "./Glass.css";
 

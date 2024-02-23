@@ -21,14 +21,16 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import sfds from "./company/sfds.png";
+import breakaway from "./company/breakaway.png";
+import freelance from "./company/freelance.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import melodytalker from "./melody-talker.png";
+import winetime from "./wine-time.png";
+import swolecialnetwork from "./swolecial-network.png";
+import blackjack from "./blackjack.png";
+
+
 
 export {
   logo,
@@ -52,11 +54,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  sfds,
+  breakaway,
+  melodytalker,
+  winetime,
+  swolecialnetwork,
+  blackjack,
+  freelance
 };

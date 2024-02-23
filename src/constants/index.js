@@ -15,14 +15,14 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  sfds,
+  breakaway,
+  freelance,
+  winetime,
+  swolecialnetwork,
+  blackjack,
   threejs,
+  melodytalker,
 } from "../assets";
 
 export const navLinks = [
@@ -118,7 +118,7 @@ const experiences = [
   {
     title: "3d Printing Lead",
     company_name: "SFDS",
-    icon: starbucks,
+    icon: sfds,
     iconBg: "#383E56",
     date: "January 2024 - Present",
     points: [
@@ -131,7 +131,7 @@ const experiences = [
   {
     title: "Scenic Artist / Casting Artist",
     company_name: "SFDS",
-    icon: starbucks,
+    icon: sfds,
     iconBg: "#383E56",
     date: "May 2021 - January 2024",
     points: [
@@ -145,7 +145,7 @@ const experiences = [
   {
     title: "VFX Artist",
     company_name: "Self",
-    icon: tesla,
+    icon: freelance,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -157,7 +157,7 @@ const experiences = [
   {
     title: "Crew Chief",
     company_name: "Breakaway Courier Systems",
-    icon: shopify,
+    icon: breakaway,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -167,32 +167,7 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+
 
 const projects = [
   {
@@ -217,7 +192,7 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: carrent,
+    image: melodytalker,
     source_code_link: "https://github.com/rknm-cell/Melody-Talker",
   },
   {
@@ -237,7 +212,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: winetime,
     source_code_link: "https://github.com/rknm-cell/Wine-Time",
   },
   {
@@ -261,7 +236,7 @@ const projects = [
         color: "yellow-text-gradient" 
       },
     ],
-    image: tripguide,
+    image: swolecialnetwork,
     source_code_link: "https://github.com/rknm-cell/swocial_network",
   },{
   name: "Blackjack CLI",
@@ -280,9 +255,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: blackjack,
     source_code_link: "https://github.com/rknm-cell/CLI-Blackjack",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
